@@ -1,0 +1,21 @@
+html, button, input, select, textarea{
+    color: #444;
+}
+html{
+    font-size: 1em;
+    line-height: 1.4;
+    
+}
+img{
+    width: 5cm;
+    height: 5cm;
+    
+    
+}
+.page{
+    width : 900px;
+    margin : auto;
+    font-size: 16px;
+    font-family: 'Source sans Pro';
+    background-color: #85d6ff;
+}
