@@ -24,3 +24,16 @@ img{
     font-family: 'Source sans Pro';
     background-color: #afafaf;
 }
+#panel1 {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    color: rgb(0, 0, 0);
+    border: solid 1px #a6d8a8;
+    margin: auto;
+  }
+  
+  #panel1{
+    display: none;
+  }
