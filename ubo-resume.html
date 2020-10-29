@@ -19,7 +19,7 @@
     </head>
 
     <body>
-        <div itemscope itemtype="https://shema.org/Person" id="wrapper">
+        <div itemscope itemtype="https://schema.org/Person" id="wrapper">
         
         <header>
             <div class="container">
@@ -31,9 +31,9 @@
                     
                 </div>
                 
-                <h3>Adresse : 2 4 Rue des Archives, BREST</h3>
+                <h3 itemprop="address">Adresse : 2 4 Rue des Archives, BREST</h3>
 
-                <h3>Email : imzili.med@gmail.com</h3>
+                <h3 itemprop="email">Email : imzili.med@gmail.com</h3>
                 <h3>Nationalité : Maroccaine</h3>
             </div>   
         </header>
@@ -49,7 +49,7 @@
 
         <br>
         <hr style="width:75%;text-align:left;">
-        <h1><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Formation :</h1>
+        <h1 onclick="myFunction2()"><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Formation : <button type="button" class="btn btn-info">Détails</button></h1>
         <div id="panel2">
             <ul>
                 <li>2014 : Baccalauréat SCIENCE PHYSIQUE, Mention : TRES BIEN.</li>
@@ -60,35 +60,40 @@
         </div> 
         
          <hr style="width:75%;text-align:left;">
-        <h1><i class="fa fa-tasks" aria-hidden="true"></i>Compétences :</h1>
-
-        <dl>
-            <dt>Développement WEB:</dt>
-            <dd>Développement des applications web : PHP LARAVEL, JEE SPRING...</dd>
-
-            <dt>Développement Mobile:</dt>
-            <dd>Développement des mobiles natives : ANDROID. Et Hybrides : IONIC, REACT, ANGULAR</dd>
-            
-            <dt>Bases de Données:</dt>
-            <dd>ORACLE, MySQL, SQLSERVER, MongoDB</dd>
-
-            <dt>Data Science:</dt>
-            <dd>Extraction, Loading, Transfert, SPOON ...</dd>
-
-            <dt>Machine Learning:</dt>
-            <dd>Python, classification, prediction, regression, Neural Network..</dd>
-            
-        </dl>
+        <h1 onclick="myFunction3()" ><i class="fa fa-tasks" aria-hidden="true"></i>Compétences : <button type="button" class="btn btn-info">Détails</button></h1>
+        <div id="panel3">
+            <dl>
+                <dt>Développement WEB:</dt>
+                <dd>Développement des applications web : PHP LARAVEL, JEE SPRING...</dd>
+    
+                <dt>Développement Mobile:</dt>
+                <dd>Développement des mobiles natives : ANDROID. Et Hybrides : IONIC, REACT, ANGULAR</dd>
+                
+                <dt>Bases de Données:</dt>
+                <dd>ORACLE, MySQL, SQLSERVER, MongoDB</dd>
+    
+                <dt>Data Science:</dt>
+                <dd>Extraction, Loading, Transfert, SPOON ...</dd>
+    
+                <dt>Machine Learning:</dt>
+                <dd>Python, classification, prediction, regression, Neural Network..</dd>
+                
+            </dl>
+        </div> 
+        
         <hr style="width:75%;text-align:left;">
 
-        <h1><i class="fa fa-briefcase" aria-hidden="true"></i>  Expériences :</h1>
-        <ul>
-            <li>2016 : Stage d'initiation au sein de l'Office National de l'Electricité.</li>
-            <li>2018 : Stage PFE à l'office Chérifien des Phosphates.</li>
-            <li>2019 : Stage de deux mois à la société GMSOFT</li>
-            <li>2020 : Compétition de programmation MCPC à l'école 1337</li>
-            <li>2020 : hackathon IBMCodeChallenge à l'école ENSIAS de Rabat</li>
-        </ul>
+        <h1 onclick="myFunction4()"><i class="fa fa-briefcase" aria-hidden="true"></i>  Expériences : <button type="button" class="btn btn-info">Détails</button></h1>
+        <div id="panel4">
+            <ul>
+                <li>2016 : Stage d'initiation au sein de l'Office National de l'Electricité.</li>
+                <li>2018 : Stage PFE à l'office Chérifien des Phosphates.</li>
+                <li>2019 : Stage de deux mois à la société GMSOFT</li>
+                <li>2020 : Compétition de programmation MCPC à l'école 1337</li>
+                <li>2020 : hackathon IBMCodeChallenge à l'école ENSIAS de Rabat</li>
+            </ul>
+        </div> 
+       
 
         <footer>
             <hr style="width:75%;text-align:left;">
@@ -106,6 +111,27 @@
     <script>
         function myFunction() {
           document.getElementById("panel1").style.display = "block";
+          document.getElementById("panel2").style.display = "none";
+          document.getElementById("panel3").style.display = "none";
+          document.getElementById("panel4").style.display = "none";
+        }
+        function myFunction2() {
+          document.getElementById("panel2").style.display = "block";
+          document.getElementById("panel1").style.display = "none";
+          document.getElementById("panel3").style.display = "none";
+          document.getElementById("panel4").style.display = "none";
+        }
+        function myFunction3() {
+          document.getElementById("panel3").style.display = "block";
+          document.getElementById("panel1").style.display = "none";
+          document.getElementById("panel2").style.display = "none";
+          document.getElementById("panel4").style.display = "none";
+        }
+        function myFunction4() {
+          document.getElementById("panel4").style.display = "block";
+          document.getElementById("panel1").style.display = "none";
+          document.getElementById("panel2").style.display = "none";
+          document.getElementById("panel3").style.display = "none";
         }
         </script>
     </body>
