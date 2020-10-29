@@ -1,21 +1,26 @@
 html, button, input, select, textarea{
-    color: #444;
+    color: rgb(0, 0, 0);
 }
 html{
     font-size: 1em;
     line-height: 1.4;
-    
+    min-width: 320px;
 }
 img{
     width: 5cm;
     height: 5cm;
-    
+    float: right;
+    border: #ccc 1px;
+    margin-right: 50px;
     
 }
-.page{
-    width : 900px;
-    margin : auto;
+
+#wrapper{
+    max-width : 900px;
+    
+    margin-left : auto;
+    margin-right: auto;
     font-size: 16px;
     font-family: 'Source sans Pro';
-    background-color: #85d6ff;
+    background-color: #afafaf;
 }
