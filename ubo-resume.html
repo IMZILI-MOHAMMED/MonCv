@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="css/resume.css">
         <link rel="stylesheet" href="css/responsive.css">
-        
+        <script type="text/javascript" src="js/Myjs.js"></script>
         <script src="https://use.fontawesome.com/340082bfa5.js"></script>
 
         <meta charset="utf-8">
@@ -63,19 +63,32 @@
         <h1 onclick="myFunction3()" ><i class="fa fa-tasks" aria-hidden="true"></i>Compétences : <button type="button" class="btn btn-info">Détails</button></h1>
         <div id="panel3">
             <dl>
-                <dt>Développement WEB:</dt>
+                <div class="tooltip">Développement WEB:
+                    <span class="tooltiptext">je maitrise le développement des applications web avec les frameworks</span>
+                </div>
                 <dd>Développement des applications web : PHP LARAVEL, JEE SPRING...</dd>
-    
-                <dt>Développement Mobile:</dt>
+
+
+                <div class="tooltip">Développement Mobile :
+                    <span class="tooltiptext">je fais le développement des applications mobiles natives et hybrides</span>
+                </div>
                 <dd>Développement des mobiles natives : ANDROID. Et Hybrides : IONIC, REACT, ANGULAR</dd>
                 
-                <dt>Bases de Données:</dt>
+                <div class="tooltip">Bases de Données :
+                    <span class="tooltiptext">j'utilise les bases de données relationnelles et orientées documents</span>
+                </div>
+
                 <dd>ORACLE, MySQL, SQLSERVER, MongoDB</dd>
     
-                <dt>Data Science:</dt>
+                <div class="tooltip">Data Science :
+                    <span class="tooltiptext">application des algorithmes de l'intelligence artificielle</span>
+                </div>
                 <dd>Extraction, Loading, Transfert, SPOON ...</dd>
     
-                <dt>Machine Learning:</dt>
+
+                <div class="tooltip">Machine Learning :
+                    <span class="tooltiptext">application des algorithmes de l'intelligence artificielle</span>
+                </div>
                 <dd>Python, classification, prediction, regression, Neural Network..</dd>
                 
             </dl>
@@ -108,32 +121,7 @@
             
         </footer>
     </div>
-    <script>
-        function myFunction() {
-          document.getElementById("panel1").style.display = "block";
-          document.getElementById("panel2").style.display = "none";
-          document.getElementById("panel3").style.display = "none";
-          document.getElementById("panel4").style.display = "none";
-        }
-        function myFunction2() {
-          document.getElementById("panel2").style.display = "block";
-          document.getElementById("panel1").style.display = "none";
-          document.getElementById("panel3").style.display = "none";
-          document.getElementById("panel4").style.display = "none";
-        }
-        function myFunction3() {
-          document.getElementById("panel3").style.display = "block";
-          document.getElementById("panel1").style.display = "none";
-          document.getElementById("panel2").style.display = "none";
-          document.getElementById("panel4").style.display = "none";
-        }
-        function myFunction4() {
-          document.getElementById("panel4").style.display = "block";
-          document.getElementById("panel1").style.display = "none";
-          document.getElementById("panel2").style.display = "none";
-          document.getElementById("panel3").style.display = "none";
-        }
-        </script>
+
     </body>
 
 </html>
